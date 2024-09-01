@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "redflags",
+  "version": "${version}",
+
+  "name": "Red Flags",
+  "description": "Shows flag owners",
+  "authors": [
+    "Bigjango"
+  ],
+
+  "icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "bigjango.redflags.RedFlags"
+    ]
+  },
+  "mixins": [
+      "redflags.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.15.5"
+  }
+}
