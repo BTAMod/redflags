@@ -1,6 +1,6 @@
 package bigjango.redflags.mixins;
 
-import bigjango.redflags.IReversable;
+import bigjango.redflags.IRedFlag;
 
 import net.minecraft.client.render.model.Cube;
 import net.minecraft.client.render.model.ModelFlag;
@@ -46,7 +46,7 @@ public class TileEntityRendererFlagMixin {
     public void doRenderH(
         TileEntityFlag tileEntity, double x, double y, double z, float partialTick, boolean shortPole, float windDirection, float windIntensity, CallbackInfo ci
     ) {
-        correct = ((IReversable) tileEntity).isCorrect();
+        correct = ((IRedFlag) tileEntity).isCorrect();
     }
 
     @Redirect(

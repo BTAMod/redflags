@@ -4,13 +4,14 @@
     "package": "bigjango.redflags.mixins",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
-        "RenderGlobalMixin",
-        "TileEntityRendererFlagMixin",
-        "CubeMixin",
-        "GuiEditFlagMixin",
         "TileEntityFlagMixin"
     ],
     "client": [
+        "FlagRendererMixin",
+        "GuiEditFlagMixin",
+        "CubeMixin",
+        "RenderGlobalMixin",
+        "TileEntityRendererFlagMixin"
     ],
     "injectors": {
         "defaultRequire": 1

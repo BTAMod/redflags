@@ -1,6 +1,6 @@
 package bigjango.redflags.mixins;
 
-import bigjango.redflags.IReversable;
+import bigjango.redflags.IRedFlag;
 
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiEditFlag;
@@ -38,7 +38,7 @@ public abstract class GuiEditFlagMixin extends GuiContainer {
     @Inject(method = "buttonPressed", at = @At("TAIL"))
     private void buttonPressed_(GuiButton button, CallbackInfo ci) {
         if (button.id == 7) {
-            ((IReversable) tileEntity).setCorrect(!((IReversable) tileEntity).isCorrect());
+            ((IRedFlag) tileEntity).setCorrect(!((IRedFlag) tileEntity).isCorrect());
         }
     }
 }
