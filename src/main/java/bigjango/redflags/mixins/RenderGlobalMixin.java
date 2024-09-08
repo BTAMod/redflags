@@ -8,7 +8,6 @@ import net.minecraft.core.block.entity.TileEntity;
 import net.minecraft.core.block.entity.TileEntityFlag;
 import net.minecraft.client.render.FontRenderer;
 import net.minecraft.client.render.tessellator.Tessellator;
-//import net.minecraft.client.render.Tessellator;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -18,7 +17,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import org.lwjgl.opengl.GL11;
 
-// If you know what I'm referring to, yes, that is exactly what this is from ;)
 @Mixin(value = RenderGlobal.class, remap = false)
 public abstract class RenderGlobalMixin {
     @Shadow
